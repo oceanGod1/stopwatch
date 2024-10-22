@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Stop Watch</title>
+</head>
+<body>
+  <main>
+    <section id="landing-section">
+      <ul id="navigate">
+        <li class="control-button navigation-button select-stopwatch">Stop Watch</li>
+        <li class="control-button navigation-button select-countdown">Countdown Timer</li>
+      </ul>
+    </section>
+    
+    <section id="stopwatch-section" class="remove-section">
+      <a class="go-back navigation-button">Back</a>
+      <h2>Stop Watch</h2>
+      <div class="display-timer">
+        <h2 class="display-sw-hr"></h2>
+        <h2>:</h2>
+        <h2 class="display-sw-min"></h2>
+        <h2>:</h2>
+        <h2 class="display-sw-sec"></h2>
+        <h2>.</h2>
+        <h2 class="display-sw-mill"></h2>
+      </div>
+      <div class="controls-buttons">
+        <button class="control-button sw-start-button">Start</button>
+        <button class="control-button sw-lap-button">Lap</button>
+        <button class="control-button sw-stop-button">Stop</button>
+        <button class="control-button sw-reset-button">Reset</button>
+      </div>
+      <div class="lap-time"></div>
+    </section>
+
+    <section id="countdown-section" class="remove-section">
+      <a class="go-back navigation-button">Back</a>
+      <h2>Count Down</h2>
+      <form id="set-countdown" class="controls-buttons">
+        <label for="countdown-from">From:</label>
+        <input type="number" id="countdown-hr" name="countdown-from" placeholder="hr" min="0" max="999">
+        <input type="number" id="countdown-min" name="countdown-from" placeholder="min" min="0" max="59">
+        <input type="number" id="countdown-sec" name="countdown-from" placeholder="sec" min="0" max="59">
+        <button class="control-button">Submit</button>
+      </form>
+      <div class="display-timer">
+        <h2 class="display-cd-hr"></h2>
+        <h2 class="cd-time-dimacation">:</h2>
+        <h2 class="display-cd-min"></h2>
+        <h2 class="cd-time-dimacation">:</h2>
+        <h2 class="display-cd-sec"></h2>
+        <h2 class="cd-time-dimacation">.</h2>
+        <h2 class="display-cd-mill"></h2>
+      </div>
+      <div id="red-alert"></div>
+      <div class="controls-buttons">
+        <button class="control-button countdown-start-button">Start</button>
+        <button class="control-button countdown-lap-button">Lap</button>
+        <button class="control-button countdown-stop-button">Stop</button>
+        <button class="control-button countdown-reset-button">Reset</button>        
+      </div>
+    </section>
+    
+  </main>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/stopwatch.js"></script>
+  <script src="scripts/countdown.js"></script>
+</body>
+</html>
