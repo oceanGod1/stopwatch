@@ -94,6 +94,7 @@ startCountdown.addEventListener('click', function(){
       clearInterval(countdownInterval);
       disableButton(stopCountdown)
       enableSetCountdown()
+      obj.goBack[1].classList.remove('hide-icon')
       document.querySelector('.time-up').classList.add('isactive');
     }
     if (countdownHr === 0 && countdownMin === 60 && countdownSec <= 10 && countdownSec >= 1 && countdownMill === 100){
@@ -108,6 +109,7 @@ startCountdown.addEventListener('click', function(){
   disableButton(startCountdown)
   disableButton(resetCountdown)
   enableButton(stopCountdown)
+  obj.goBack[1].classList.add('hide-icon')
 })
 
 stopCountdown.addEventListener('click', () => {
@@ -115,6 +117,7 @@ stopCountdown.addEventListener('click', () => {
   disableButton(stopCountdown)
   enableButton(startCountdown)
   enableButton(resetCountdown)
+  obj.goBack[1].classList.remove('hide-icon')
 })
 
 resetCountdown.addEventListener('click', () => {

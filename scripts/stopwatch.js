@@ -50,6 +50,7 @@ startStopwatch.addEventListener('click', () => {
   enableButton(stopwatchLap)
   enableButton(stopStopwatch)
   disableButton(resetStopwatch)
+  obj.goBack[0].classList.add('hide-icon')
 })
 
 stopStopwatch.addEventListener('click', function(){
@@ -58,6 +59,7 @@ stopStopwatch.addEventListener('click', function(){
   disableButton(stopwatchLap)
   enableButton(startStopwatch)
   enableButton(resetStopwatch)
+  obj.goBack[0].classList.remove('hide-icon')
 })
 
 let eachLap = 0;

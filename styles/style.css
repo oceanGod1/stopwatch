@@ -51,6 +51,9 @@ main{
   background-color: green;
   position: fixed; top: 1rem; left: 1rem;
 }
+.hide-icon{
+  display: none;
+}
 .remove-section{
   display: none;
 }
