@@ -32,7 +32,6 @@ displayCountdownSec = document.querySelector('.display-cd-sec'),
 displayCountdownMill = document.querySelector('.display-cd-mill'),
 timeDimacation = document.querySelectorAll('.cd-time-dimacation'),
 startCountdown = document.querySelector('.countdown-start-button'),
-countdownLap = document.querySelector('.countdown-lap-button'),
 stopCountdown = document.querySelector('.countdown-stop-button'),
 resetCountdown = document.querySelector('.countdown-reset-button'),
 redAlert = document.querySelector('#red-alert');
@@ -68,6 +67,5 @@ disableButton(stopwatchLap)
 disableButton(stopStopwatch)
 disableButton(resetStopwatch)
 disableButton(startCountdown)
-disableButton(countdownLap)
 disableButton(stopCountdown)
 disableButton(resetCountdown)

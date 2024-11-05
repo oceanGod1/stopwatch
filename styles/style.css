@@ -1,3 +1,9 @@
+:root{
+  --primary-color: #008000;
+  --btn-text-color: #fefefe;
+  --active-btn-text-color: #e0e0e0;
+}
+
 body{
   font-family: Calibri, sans-serif;
 }
@@ -11,8 +17,8 @@ main{
 #navigate{
   padding: 0;
   width: 30rem;
-  min-width: 10rem;
   display: grid;
+  min-width: 10rem;
   list-style: none;
   justify-items: center;
   grid-auto-flow: column;
@@ -29,26 +35,26 @@ main{
   border: none;
   cursor: pointer;
   transition: 0.5s;
-  color: #fefefe;
   text-align: center;
   padding: 1rem 2rem;
   border-radius: 2rem;
-  background-color: green;
+  color: var(--btn-text-color);
+  background-color: var(--primary-color);
 }
 #navigate .control-button{
   width: 8rem;
   transition: 0s;
 }
 .navigation-button:active{
-  color: #e0e0e0;
-  background-color: rgb(86, 166, 86);
+  background-color: #56a656;
+  color: var(--active-btn-text-color);
 }
 .go-back{
   cursor: pointer;
-  color: #fefefe;
   border-radius: 50%;
   padding: 0.9rem 0.5rem;
-  background-color: green;
+  color: var(--btn-text-color);
+  background-color: var(--primary-color);
   position: fixed; top: 1rem; left: 1rem;
 }
 .hide-icon{
@@ -64,9 +70,8 @@ main{
 }
 .disable-control-button{
   width: 18rem;
-  color: #e0e0e0;
-  background-color: rgb(86, 166, 86);
-  background-color: rgb(140, 159, 140);
+  color: var(--active-btn-text-color);
+  background-color: #8c9f8c;
 }
 .display-timer{
   display: grid;
@@ -81,11 +86,11 @@ main{
 #set-countdown{
   height: 6rem;
   border-radius: 1rem;
-  border: 2px solid green;
-  background-color: rgba(0, 128, 0, 0.1);
+  border: 2px solid var(--primary-color);
+  background-color: #0080001a;
 }
 #set-countdown.disabled{
-  border: 1.5px solid rgb(94, 168, 94);
+  border: 1.5px solid #5ea85e;
 }
 #set-countdown .control-button{
   grid-area: 2/1/3/5;
@@ -93,7 +98,7 @@ main{
 [name="countdown-from"]{
   width: 3rem;
   border-radius: 0.4rem;
-  border: 1.5px solid green;
+  border: 1.5px solid var(--primary-color);
 }
 .lap-time{
   position: absolute; top: 25rem; right: auto
@@ -107,7 +112,7 @@ main{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #ff0000;
   /* transition: 20; */
 }
 #red-alert.add-alert{
